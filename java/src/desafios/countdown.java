@@ -3,7 +3,7 @@ package desafios;
 import java.util.Scanner;
 
 public class countdown {
-    static void main(String[] args) {
+   public static void main(String[] args) {
 // usuário digita um número e o programa faz uma contagem regressiva até 0.
         Scanner input = new Scanner(System.in);
 
@@ -21,6 +21,7 @@ public class countdown {
             }
             if (senha == 1234) {
                 System.out.println("senha correta Acesso Autorizado");
+                break;
             } else if (senha != 1234) {
                 System.out.println("senha incorreta " + tentativa + " tentativas ainda");
             }
