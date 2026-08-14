@@ -19,12 +19,12 @@ public class JogoDaForca {
                 }
 
                     String escolha = scanner.nextLine().toLowerCase();
-                    System.out.println("Você escolheu: " + escolha);
+                    System.out.println("Você escolheu: \u001B[35m" + escolha + "\u001B[0m");
 
                 if (escolha.equals("items") && Items.length > 0) {
                     String escolhaItem = Items[(int) (Math.random() * Items.length)];
                     String novaPalavra = escolhaItem.replaceAll("[a,e,i,o,u]", " ");
-                    System.out.println("Palavra com letras removidas: " + novaPalavra + " - " + novaPalavra.length() + " letras");
+                    System.out.println("Palavra com letras removidas: \u001B[32m" + novaPalavra + "\u001B[0m - " + novaPalavra.length() + " letras");
                     System.out.println("Digite a palavra que você acha que é: ");
                     String escolha2 = scanner.nextLine().toLowerCase();
                     if (escolha2.equals(escolhaItem)) {
@@ -38,7 +38,7 @@ public class JogoDaForca {
                 else if (escolha.equals("frutas") && Frutas.length >0){
                     String escolhaFruta = Frutas[(int) (Math.random() * Frutas.length)];
                     String novaPalavra = escolhaFruta.replaceAll("[a,e,i,o,u]", " ");
-                    System.out.println("Palavra com letras removidas: "+novaPalavra + " - " + novaPalavra.length() + " letras");
+                    System.out.println("Palavra com letras removidas: \u001B[32m" + novaPalavra + "\u001B[0m - " + novaPalavra.length() + " letras");
                     System.out.println("Digite a palavra que você acha que é: ");
                     String escolha2 = scanner.nextLine().toLowerCase();
                     if (escolha2.equals(escolhaFruta)) {
@@ -52,7 +52,7 @@ public class JogoDaForca {
                 else if (escolha.equals("animais") && Animais.length > 0) {
                     String escolhaAnimal = Animais[(int) (Math.random() * Animais.length)];
                     String novaPalavra = escolhaAnimal.replaceAll("[a,e,i,o,u]", " ");
-                    System.out.println("Palavra com letras removidas: "+novaPalavra + " - " + novaPalavra.length() + " letras");
+                    System.out.println("Palavra com letras removidas: \u001B[32m" + novaPalavra + "\u001B[0m - " + novaPalavra.length() + " letras");
                     System.out.println("Digite a palavra que você acha que é: ");
                     String escolha2 = scanner.nextLine().toLowerCase();
                     if (escolha2.equals(escolhaAnimal)) {
@@ -65,8 +65,8 @@ public class JogoDaForca {
 
                 else if (escolha.equals("cores") && Cores.length > 0) {
                     String escolhaCor = Cores[(int) (Math.random() * Cores.length)];
-                    String novaPalavra = escolhaCor.replaceAll("[a,e,i,o,u]", " ");
-                    System.out.println("Palavra com letras removidas: "+novaPalavra + " - " + novaPalavra.length() + " letras");
+                    String novaPalavra = escolhaCor.replaceAll("[a,e,i,o,u]", "");
+                    System.out.println("Palavra com letras removidas: \u001B[32m" + novaPalavra + "\u001B[0m - " + novaPalavra.length() + " letras");
                     System.out.println("Digite a palavra que você acha que é: ");
                     String escolha2 = scanner.nextLine().toLowerCase();
                     if (escolha2.equals(escolhaCor)) {
@@ -80,7 +80,7 @@ public class JogoDaForca {
                 else if (escolha.equals("objetos") && Objetos.length > 0) {
                     String escolhaObjeto = Objetos[(int) (Math.random() * Objetos.length)];
                     String novaPalavra = escolhaObjeto.replaceAll("[a,e,i,o,u]", " ");
-                    System.out.println("Palavra com letras removidas: "+novaPalavra + " - " + novaPalavra.length() + " letras");
+                    System.out.println("Palavra com letras removidas: \u001B[32m" + novaPalavra + "\u001B[0m - " + novaPalavra.length() + " letras");
                     System.out.println("Digite a palavra que você acha que é: ");
                     String escolha2 = scanner.nextLine().toLowerCase();
                     if (escolha2.equals(escolhaObjeto)) {
@@ -94,7 +94,7 @@ public class JogoDaForca {
                 else if (escolha.equals("profissoes") && Profissoes.length > 0) {
                     String escolhaProfissao = Profissoes[(int) (Math.random() * Profissoes.length)];
                     String novaPalavra = escolhaProfissao.replaceAll("[a,e,i,o,u]", " ");
-                    System.out.println("Palavra com letras removidas: "+novaPalavra + " - " + novaPalavra.length() + " letras");
+                    System.out.println("Palavra com letras removidas: \u001B[32m" + novaPalavra + "\u001B[0m - " + novaPalavra.length() + " letras");
                     System.out.println("Digite a palavra que você acha que é: ");
                     String escolha2 = scanner.nextLine().toLowerCase();
                     if (escolha2.equals(escolhaProfissao)) {
