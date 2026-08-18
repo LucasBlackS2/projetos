@@ -11,12 +11,12 @@ public class semaforo {
         this.verde = "verde";
     }
     public void acenderVermelho() {
-        System.out.println("O semáforo está\u001B[31m\" vermelho. Pare!\u001B[0m");
+        System.out.println("O semáforo está \u001B[31mvermelho. Pare!\u001B[0m");
     }
     public void acenderAmarelo() {
-        System.out.println("O semáforo está\u001B[33m\" amarelo. Atenção!\u001B[0m");
+        System.out.println("O semáforo está \u001B[33mamarelo. Atenção!\u001B[0m");
 }
     public void acenderVerde() {
-        System.out.println("O semáforo está\u001B[32m\" verde. Pode passar!\u001B[0m");
+        System.out.println("O semáforo está \u001B[32mverde. Pode passar!\u001B[0m");
     }
 }
